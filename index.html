@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handwritten Digit Recognition</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Handwritten Digit Recognition</h1>
+    <p class="subtitle">Draw a digit (0–9) in the box below</p>
+
+    <div class="canvas-wrapper">
+      <canvas id="canvas" width="280" height="280"></canvas>
+    </div>
+
+    <div class="buttons">
+      <button id="predictBtn">Predict</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <div class="result" id="result" style="display:none;">
+      <h2>Predicted Digit: <span id="digit">-</span></h2>
+      <p>Confidence: <span id="confidence">-</span>%</p>
+      <div class="confidence-bar">
+        <div class="confidence-fill" id="confidenceFill"></div>
+      </div>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
